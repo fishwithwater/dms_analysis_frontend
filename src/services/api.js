@@ -18,4 +18,6 @@ export default {
 
   queryFixDataList: 'GET /fixdata/query-like true', //最后一个true为开启联调模式
   deleteFixDataById: 'POST /fixdata/delete true',
+
+  queryMapMarkers: 'GET /map/markers true',
 }
