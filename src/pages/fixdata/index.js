@@ -40,7 +40,7 @@ class FixData extends PureComponent {
           ...value,
           page: 1,
         })
-      }
+      },
     }
     const listProps = {
       dataSource: list,
@@ -55,7 +55,7 @@ class FixData extends PureComponent {
       onDeleteItem(id) {
         dispatch({
           type: 'fixdatas/delete',
-          payload: {id},
+          payload: { id },
         }).then(() => {
           handleRefresh({
             page:
@@ -88,7 +88,6 @@ class FixData extends PureComponent {
   }
 }
 
-FixData.propTypes = {
-}
+FixData.propTypes = {}
 
 export default FixData

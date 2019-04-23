@@ -10,13 +10,7 @@ import styles from './Sider.less'
 @withI18n()
 class Sider extends PureComponent {
   render() {
-    const {
-      menus,
-      theme,
-      isMobile,
-      collapsed,
-      onCollapseChange,
-    } = this.props
+    const { menus, theme, isMobile, collapsed, onCollapseChange } = this.props
 
     return (
       <Layout.Sider

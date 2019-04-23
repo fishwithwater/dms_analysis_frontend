@@ -14,11 +14,10 @@ const EnumPostStatus = {
   PUBLISHED: 2,
 }
 
-
 @connect(({ post, loading }) => ({ post, loading }))
 class Post extends PureComponent {
   render() {
-    const { post, loading, location} = this.props
+    const { post, loading, location } = this.props
     const { list, pagination } = post
     const { query, pathname } = location
 
@@ -57,14 +56,10 @@ class Post extends PureComponent {
           }
           onTabClick={handleTabClick}
         >
-          <TabPane
-            key={String(EnumPostStatus.PUBLISHED)}
-          >
+          <TabPane key={String(EnumPostStatus.PUBLISHED)}>
             <List {...listProps} />
           </TabPane>
-          <TabPane
-            key={String(EnumPostStatus.UNPUBLISH)}
-          >
+          <TabPane key={String(EnumPostStatus.UNPUBLISH)}>
             <List {...listProps} />
           </TabPane>
         </Tabs>

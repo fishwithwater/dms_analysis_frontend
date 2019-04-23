@@ -11,7 +11,7 @@ const gen = params => {
   if (paramsArray.length === 2) {
     method = paramsArray[0]
     url = apiPrefix + paramsArray[1]
-  }else if(paramsArray.length === 3){
+  } else if (paramsArray.length === 3) {
     method = paramsArray[0]
     url = 'http://localhost:5000/api/v1' + paramsArray[1]
   }

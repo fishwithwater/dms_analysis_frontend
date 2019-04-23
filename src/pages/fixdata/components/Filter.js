@@ -7,10 +7,9 @@ import { Trans, withI18n } from '@lingui/react'
 import { Form, Button, Row, Col, DatePicker, Input, Select } from 'antd'
 import city from 'utils/city'
 
-
 const { Search } = Input
 const { RangePicker } = DatePicker
-const Option = Select.Option;
+const Option = Select.Option
 
 const ColProps = {
   xs: 24,
@@ -98,10 +97,7 @@ class Filter extends Component {
       <Row gutter={24}>
         <Col {...ColProps} xl={{ span: 4 }} md={{ span: 8 }}>
           {getFieldDecorator('address', { initialValue: address })(
-            <Search
-              placeholder={'搜索地址'}
-              onSearch={this.handleSubmit}
-            />
+            <Search placeholder={'搜索地址'} onSearch={this.handleSubmit} />
           )}
         </Col>
         <Col
@@ -111,10 +107,16 @@ class Filter extends Component {
           id="addressCascader"
         >
           {getFieldDecorator('fixPeople', { initialValue: fixPeople })(
-            <Select style={{ width: '100%' }} placeholder="选择维修人员" onChange={this.handleChange.bind(this, 'address')}>
+            <Select
+              style={{ width: '100%' }}
+              placeholder="选择维修人员"
+              onChange={this.handleChange.bind(this, 'address')}
+            >
               <Option value="jack">Jack</Option>
               <Option value="lucy">Lucy</Option>
-              <Option value="disabled" disabled>Disabled</Option>
+              <Option value="disabled" disabled>
+                Disabled
+              </Option>
               <Option value="Yiminghe">yiminghe</Option>
             </Select>
           )}

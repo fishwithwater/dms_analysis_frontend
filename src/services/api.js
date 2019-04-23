@@ -1,5 +1,5 @@
 export default {
-  queryRouteList: '/routes',
+  queryRouteList: 'GET /routes true',
 
   queryUserInfo: '/user',
   logoutUser: '/user/logout',
@@ -16,6 +16,6 @@ export default {
 
   queryDashboard: '/dashboard',
 
-  queryFixDataList:'GET /fixdata/query-like true',//最后一个true为开启联调模式
-  deleteFixDataById:'POST /fixdata/delete true'
+  queryFixDataList: 'GET /fixdata/query-like true', //最后一个true为开启联调模式
+  deleteFixDataById: 'POST /fixdata/delete true',
 }

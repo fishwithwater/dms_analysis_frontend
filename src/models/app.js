@@ -78,7 +78,8 @@ export default {
       const { locationPathname } = yield select(_ => _.app)
 
       if (success && user) {
-        const { list } = yield call(queryRouteList)
+        const res = yield call(queryRouteList)
+        const list = res.data
         const { permissions } = user
         let routeList = list
         if (
@@ -106,7 +107,7 @@ export default {
             routeList,
           },
         })
-        if (pathMatchRegexp(['/','/login'], window.location.pathname)) {
+        if (pathMatchRegexp(['/', '/login'], window.location.pathname)) {
           router.push({
             pathname: '/dashboard',
           })

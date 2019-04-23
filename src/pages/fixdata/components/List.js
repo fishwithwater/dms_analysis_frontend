@@ -10,7 +10,7 @@ const { confirm } = Modal
 
 @withI18n()
 class List extends PureComponent {
-  handleMenuClick = (record) => {
+  handleMenuClick = record => {
     const { onDeleteItem } = this.props
     onDeleteItem(record.id)
   }
@@ -24,12 +24,12 @@ class List extends PureComponent {
         dataIndex: 'id',
         key: 'id',
         width: 72,
-        fixed: 'left'
+        fixed: 'left',
       },
       {
         title: '地址',
         dataIndex: 'address',
-        key: 'address'
+        key: 'address',
       },
       {
         title: '维修内容',
@@ -104,7 +104,7 @@ class List extends PureComponent {
           return (
             <Popconfirm
               title="确认删除这条记录吗？"
-              onConfirm={this.handleMenuClick.bind(this,record)}
+              onConfirm={this.handleMenuClick.bind(this, record)}
               okText="是"
               cancelText="否"
             >

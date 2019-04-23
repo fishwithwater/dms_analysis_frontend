@@ -30,6 +30,7 @@
     "qs": "^6.7.0",
     "rc-tween-one": "^2.3.0",
     "react-adsense": "^0.0.6",
+    "react-amap": "^1.2.8",
     "react-countup": "^4.1.0",
     "react-draft-wysiwyg": "^1.13.0",
     "react-helmet": "^5.2.0",

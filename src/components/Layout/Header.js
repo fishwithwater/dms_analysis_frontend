@@ -1,6 +1,6 @@
 import React, { PureComponent, Fragment } from 'react'
 import PropTypes from 'prop-types'
-import { Menu, Icon, Layout, Avatar} from 'antd'
+import { Menu, Icon, Layout, Avatar } from 'antd'
 import { Trans, withI18n } from '@lingui/react'
 import classnames from 'classnames'
 import styles from './Header.less'
@@ -13,13 +13,7 @@ class Header extends PureComponent {
     e.key === 'SignOut' && this.props.onSignOut()
   }
   render() {
-    const {
-      fixed,
-      avatar,
-      username,
-      collapsed,
-      onCollapseChange,
-    } = this.props
+    const { fixed, avatar, username, collapsed, onCollapseChange } = this.props
 
     const rightContent = [
       <Menu key="user" mode="horizontal" onClick={this.handleClickMenu}>
@@ -40,10 +34,6 @@ class Header extends PureComponent {
         </SubMenu>
       </Menu>,
     ]
-
-    
-
-    
 
     return (
       <Layout.Header

@@ -51,7 +51,7 @@ class Login extends PureComponent {
       <Fragment>
         <div className={styles.form}>
           <div className={styles.logo}>
-          <Icon className={styles.img} type="deployment-unit" />
+            <Icon className={styles.img} type="deployment-unit" />
             <span>{config.siteName}</span>
           </div>
           <form>
@@ -62,12 +62,7 @@ class Login extends PureComponent {
                     required: true,
                   },
                 ],
-              })(
-                <Input
-                  onPressEnter={this.handleOk}
-                  placeholder={'用户名'}
-                />
-              )}
+              })(<Input onPressEnter={this.handleOk} placeholder={'用户名'} />)}
             </FormItem>
             <FormItem hasFeedback>
               {getFieldDecorator('password', {
