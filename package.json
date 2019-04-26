@@ -73,11 +73,6 @@
       "eslint --ext .js --fix",
       "npm run prettier",
       "git add"
-    ],
-    "**/*.less": [
-      "stylelint --syntax less",
-      "npm run prettier",
-      "git add"
     ]
   },
   "lingui": {

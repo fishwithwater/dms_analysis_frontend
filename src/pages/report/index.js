@@ -5,15 +5,6 @@ import { stringify } from 'qs'
 import { Page, ScrollBar } from 'components'
 import List from './components/List'
 
-import styles from './index.less'
-
-const bodyStyle = {
-  bodyStyle: {
-    height: 432,
-    background: '#fff',
-  },
-}
-
 @connect(({ reports, loading }) => ({ reports, loading }))
 class Report extends PureComponent {
   render() {
