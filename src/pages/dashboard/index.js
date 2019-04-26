@@ -110,6 +110,24 @@ class Dashboard extends PureComponent {
               <RecentSales data={recentSales} />
             </Card>
           </Col>
+          <Col lg={12} md={24}>
+            <Card bordered={false} {...bodyStyle}>
+              <div className={styles.title}>月份与损坏</div>
+              <iframe
+                src="http://localhost/staticmap/echarts-bmonthc.html"
+                style={{ border: 0, width: '100%', height: 400 }}
+              />
+            </Card>
+          </Col>
+          <Col lg={24} md={24}>
+            <Card bordered={false} {...bodyStyle}>
+              <div className={styles.title}>损坏与材料</div>
+              <iframe
+                src="http://localhost/staticmap/echarts-bmc.html"
+                style={{ border: 0, width: '100%', height: 400 }}
+              />
+            </Card>
+          </Col>
           {/* <Col lg={12} md={24}>
             <Card bordered={false} {...bodyStyle}>
               <ScrollBar>
