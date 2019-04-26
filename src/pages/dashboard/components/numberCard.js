@@ -4,7 +4,7 @@ import { Icon, Card } from 'antd'
 import CountUp from 'react-countup'
 import styles from './numberCard.less'
 
-function NumberCard({ icon, color, title, number, countUp }) {
+function NumberCard({ icon, color, name, number, countUp }) {
   return (
     <Card
       className={styles.numberCard}
@@ -13,7 +13,7 @@ function NumberCard({ icon, color, title, number, countUp }) {
     >
       <Icon className={styles.iconWarp} style={{ color }} type={icon} />
       <div className={styles.content}>
-        <p className={styles.title}>{title || 'No Title'}</p>
+        <p className={styles.title}>{name || 'No Title'}</p>
         <p className={styles.number}>
           <CountUp
             start={0}

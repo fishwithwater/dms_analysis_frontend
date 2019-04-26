@@ -129,7 +129,7 @@ const Dashboard = Mock.mock({
     {
       icon: 'shopping-cart',
       color: Color.red,
-      title: '今日数据',
+      title: '其他原因',
       number: 4324,
     },
   ],

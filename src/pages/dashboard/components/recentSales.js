@@ -5,47 +5,27 @@ import { Table, Tag } from 'antd'
 import { Color } from 'utils'
 import styles from './recentSales.less'
 
-const status = {
-  1: {
-    color: Color.green,
-    text: 'SALE',
-  },
-  2: {
-    color: Color.yellow,
-    text: 'REJECT',
-  },
-  3: {
-    color: Color.red,
-    text: 'TAX',
-  },
-  4: {
-    color: Color.blue,
-    text: 'EXTENDED',
-  },
-}
-
 function RecentSales({ data }) {
   const columns = [
     {
-      title: 'NAME',
-      dataIndex: 'name',
+      title: '地址',
+      dataIndex: 'address',
+      key: 'address',
     },
     {
-      title: 'STATUS',
-      dataIndex: 'status',
-      render: text => <Tag color={status[text].color}>{status[text].text}</Tag>,
-    },
-    {
-      title: 'DATE',
+      title: '日期',
       dataIndex: 'date',
-      render: text => moment(text).format('YYYY-MM-DD'),
+      key: 'date',
     },
     {
-      title: 'PRICE',
-      dataIndex: 'price',
-      render: (text, it) => (
-        <span style={{ color: status[it.status].color }}>${text}</span>
-      ),
+      title: '维修内容',
+      dataIndex: 'fixContent',
+      key: 'fixContent',
+    },
+    {
+      title: '损坏原因',
+      dataIndex: 'breakContent',
+      key: 'breakContent',
     },
   ]
   return (

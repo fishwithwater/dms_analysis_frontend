@@ -14,10 +14,12 @@ export default {
 
   queryPostList: '/posts',
 
-  queryDashboard: '/dashboard',
+  queryDashboard: 'GET /dashboard/get true',
 
   queryFixDataList: 'GET /fixdata/query-like true', //最后一个true为开启联调模式
   deleteFixDataById: 'POST /fixdata/delete true',
 
   queryMapMarkers: 'GET /map/markers true',
+
+  queryReportList: 'GET /report/query-pagination true',
 }

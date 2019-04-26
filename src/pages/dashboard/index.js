@@ -110,7 +110,7 @@ class Dashboard extends PureComponent {
               <RecentSales data={recentSales} />
             </Card>
           </Col>
-          <Col lg={12} md={24}>
+          {/* <Col lg={12} md={24}>
             <Card bordered={false} {...bodyStyle}>
               <ScrollBar>
                 <Comments data={comments} />
@@ -146,7 +146,7 @@ class Dashboard extends PureComponent {
             >
               <User {...user} avatar={avatar} username={username} />
             </Card>
-          </Col>
+          </Col> */}
         </Row>
       </Page>
     )

@@ -80,7 +80,7 @@ function Sales({ data }) {
           />
           <Line
             type="monotone"
-            dataKey="Food"
+            dataKey="人为损坏"
             stroke={Color.purple}
             strokeWidth={3}
             dot={{ fill: Color.purple }}
@@ -88,7 +88,7 @@ function Sales({ data }) {
           />
           <Line
             type="monotone"
-            dataKey="Clothes"
+            dataKey="其他原因"
             stroke={Color.red}
             strokeWidth={3}
             dot={{ fill: Color.red }}
@@ -96,10 +96,18 @@ function Sales({ data }) {
           />
           <Line
             type="monotone"
-            dataKey="Electronics"
+            dataKey="总数据量"
             stroke={Color.green}
             strokeWidth={3}
             dot={{ fill: Color.green }}
+            activeDot={{ r: 5, strokeWidth: 0 }}
+          />
+          <Line
+            type="monotone"
+            dataKey="自然老化"
+            stroke={Color.peach}
+            strokeWidth={3}
+            dot={{ fill: Color.peach }}
             activeDot={{ r: 5, strokeWidth: 0 }}
           />
         </LineChart>
