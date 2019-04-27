@@ -54,7 +54,7 @@ class Dashboard extends PureComponent {
               <div className={styles.title}>月份与损坏</div>
               <iframe
                 title="bmonthc"
-                src="http://localhost/staticmap/echarts-bmonthc.html"
+                src="http://114.116.30.153/staticmap/echarts-bmonthc.html"
                 style={{ border: 0, width: '100%', height: 400 }}
               />
             </Card>
@@ -64,7 +64,7 @@ class Dashboard extends PureComponent {
               <div className={styles.title}>损坏与材料</div>
               <iframe
                 title="bmc"
-                src="http://localhost/staticmap/echarts-bmc.html"
+                src="http://114.116.30.153/staticmap/echarts-bmc.html"
                 style={{ border: 0, width: '100%', height: 400 }}
               />
             </Card>

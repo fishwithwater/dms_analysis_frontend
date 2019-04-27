@@ -10,7 +10,7 @@ class MapContent extends PureComponent {
           <Col span={24} style={{ height: '700px' }}>
             <iframe
               title="heatmap"
-              src="http://localhost/staticmap/amap-heat.html"
+              src="http://114.116.30.153/staticmap/amap-heat.html"
               style={{ border: 0, width: '100%', height: 700 }}
             />
           </Col>
