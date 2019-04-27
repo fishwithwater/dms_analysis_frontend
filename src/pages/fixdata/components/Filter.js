@@ -83,7 +83,7 @@ class Filter extends Component {
   render() {
     const { filter, form, i18n } = this.props
     const { getFieldDecorator } = form
-    const { fixPeople, address } = filter
+    const { address } = filter
 
     let initialCreateTime = []
     if (filter.createTime && filter.createTime[0]) {
@@ -98,27 +98,6 @@ class Filter extends Component {
         <Col {...ColProps} xl={{ span: 4 }} md={{ span: 8 }}>
           {getFieldDecorator('address', { initialValue: address })(
             <Search placeholder={'搜索地址'} onSearch={this.handleSubmit} />
-          )}
-        </Col>
-        <Col
-          {...ColProps}
-          xl={{ span: 4 }}
-          md={{ span: 8 }}
-          id="addressCascader"
-        >
-          {getFieldDecorator('fixPeople', { initialValue: fixPeople })(
-            <Select
-              style={{ width: '100%' }}
-              placeholder="选择维修人员"
-              onChange={this.handleChange.bind(this, 'address')}
-            >
-              <Option value="jack">Jack</Option>
-              <Option value="lucy">Lucy</Option>
-              <Option value="disabled" disabled>
-                Disabled
-              </Option>
-              <Option value="Yiminghe">yiminghe</Option>
-            </Select>
           )}
         </Col>
         <Col

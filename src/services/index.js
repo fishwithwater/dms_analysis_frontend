@@ -13,7 +13,7 @@ const gen = params => {
     url = apiPrefix + paramsArray[1]
   } else if (paramsArray.length === 3) {
     method = paramsArray[0]
-    url = 'http://localhost:5000/api/v1' + paramsArray[1]
+    url = 'http://114.116.30.153:5000/api/v1' + paramsArray[1]
   }
 
   return function(data) {

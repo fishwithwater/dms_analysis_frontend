@@ -75,6 +75,7 @@ export default {
   effects: {
     *query({ payload }, { call, put, select }) {
       const { success, user } = yield call(queryUserInfo, payload)
+      console.log(user, success)
       const { locationPathname } = yield select(_ => _.app)
 
       if (success && user) {
