@@ -16,8 +16,8 @@ export default {
         const { from } = locationQuery
         yield put({ type: 'app/query' })
         if (!pathMatchRegexp('/login', from)) {
-          if (from === '/') router.push('/dashboard')
-          else router.push(from)
+          if (from === '/analysis') router.push('/dashboard')
+          else router.push('/dashboard')
         } else {
           router.push('/dashboard')
         }
